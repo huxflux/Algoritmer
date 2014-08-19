@@ -1,0 +1,9 @@
+1.2)
+
+O(18n^2 + 6n + 5) = O(18n^2) = O(n^2)
+Omega(8n^2 + 6n + 5 = omega(8n^2) = omega(n^2)
+Theta(n^2)
+
+1.3)
+
+Noen ganger stemmer det godt, andre ganger ikke. Er vel meningen at tidsforbruket skal 4-dobles.
