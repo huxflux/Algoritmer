@@ -13,9 +13,10 @@ public class Oving1_Main {
         int maxValue = 10;
         int minValue = -10;
 
-//        int[] minmaxDay = einstein(staticArray, staticArray.length);
-//        System.out.println("Buy: day " + minmaxDay[0] + "\n" + "Sell: day " + minmaxDay[1]);
-
+/* Kj0r static array
+        int[] minmaxDay = einstein(staticArray, staticArray.length);
+        System.out.println("Buy: day " + minmaxDay[0] + "\n" + "Sell: day " + minmaxDay[1]);
+*/
         double time = 1.0;
         int start = 100;
 
@@ -35,9 +36,6 @@ public class Oving1_Main {
             double forrigeTid = time;
             time = (double)(sluttid.getTime()-starttid.getTime())/antRunder;
             System.out.format("Antall: %6d, tid: %8.2f ms, forholdstall: %6.2f, antall runder: %6d%n",numberOfElements,time,time/forrigeTid, antRunder);
-//            int[] minmaxDay = einstein(makeRandomArray(numberOfElements, maxValue, minValue), numberOfElements);
-
-//            System.out.println("Buy: day " + minmaxDay[0] + "\n" + "Sell: day " + minmaxDay[1]);
         }
     }
 
@@ -57,7 +55,7 @@ public class Oving1_Main {
             initialValue = array[i];                                // Hente f0rste element og finn differansen av de andre elementene
             for (int j = i; j < n; j++) {
                 if (array[j] > initialValue) {                      // Hvis et element er st0rre enn det f0rste elementet
-                    tempValue = Math.abs(array[j] - initialValue);  // finn differansen (absoluttverdi)
+                    tempValue = (array[j] - initialValue);          // finn differansen (absoluttverdi)
                     if (tempValue > maxDiff) {                      // Hvis abs.verdien er st0rre en maxDiff (maksimal differanse)
                         maxDiff = tempValue;                        // sett ny maxDiff
                         minmaxDay[0] = i+1;                         // 'i' inneholder kj0psdag
@@ -77,9 +75,7 @@ public class Oving1_Main {
 
         for (int i = 0; i < numberOfElements; i++) {
             array[i] = random.nextInt((maxValue - minValue) + 1) + minValue;
-//            System.out.print(array[i] + ", ");                                // skriv ut random array til out
         }
-//        System.out.println("\n");
         return array;
     }
 }
