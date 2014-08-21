@@ -55,8 +55,8 @@ public class Oving1_Main {
             initialValue = array[i];                                // Hente f0rste element og finn differansen av de andre elementene
             for (int j = i; j < n; j++) {
                 if (array[j] > initialValue) {                      // Hvis et element er st0rre enn det f0rste elementet
-                    tempValue = (array[j] - initialValue);          // finn differansen (absoluttverdi)
-                    if (tempValue > maxDiff) {                      // Hvis abs.verdien er st0rre en maxDiff (maksimal differanse)
+                    tempValue = (array[j] - initialValue);          // finn differansen
+                    if (tempValue > maxDiff) {                      // Hvis verdien er st0rre en maxDiff (maksimal differanse)
                         maxDiff = tempValue;                        // sett ny maxDiff
                         minmaxDay[0] = i+1;                         // 'i' inneholder kj0psdag
                         minmaxDay[1] = j+1;                         // 'j' inneholder salgsdag
