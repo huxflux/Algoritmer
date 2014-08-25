@@ -13,7 +13,7 @@ public class Oving2_main_221 {
     public static void main(String[] args) {
 
         double number = 1.001;
-        int exponent = 7000;
+        int exponent = 14000;
 
         double myPowSolution, mathPowSolution;
 
