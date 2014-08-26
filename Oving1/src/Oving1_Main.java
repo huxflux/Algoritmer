@@ -10,8 +10,8 @@ public class Oving1_Main {
     public static void main(String[] args) {
         int[] staticArray = {-1, 3, -9, 2, 2, -1, 2, -1, -5};
 //        int numberOfElements = 100;
-        int maxValue = 10;
-        int minValue = -10;
+        int maxValue = 100;
+        int minValue = 0;
 
 /* Kj0r static array
         int[] minmaxDay = einstein(staticArray, staticArray.length);

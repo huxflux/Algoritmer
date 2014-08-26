@@ -10,7 +10,7 @@ import java.util.Date;
 public class Oving2_main_211 {
     public static void main(String[] args) {
         double number = 1.001;
-        int exponent = 7000;
+        int exponent = 8000;
         double myPowSolution, mathPowSolution;
 
         double tid, tid2;

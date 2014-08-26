@@ -13,7 +13,7 @@ public class Oving2_main_221 {
     public static void main(String[] args) {
 
         double number = 1.001;
-        int exponent = 14000;
+        int exponent = 500000;
 
         double myPowSolution, mathPowSolution;
 
@@ -44,7 +44,7 @@ public class Oving2_main_221 {
         if (n % 2 == 0) {                           // partall hvis sant
             return myPow(number * number, n / 2);
         } else {                                    // oddetall hvis ikke
-            return (number * myPow(number * number, (n - 1) / 2));
+            return number * myPow(number * number, (n - 1) / 2);
         }
     }
 }
