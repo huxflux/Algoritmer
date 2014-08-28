@@ -13,22 +13,23 @@ public class Oving2_main_221 {
     public static void main(String[] args) {
 
         double number = 1.001;
-        int exponent = 500000;
+        int exponent = 2000000;
 
-        double myPowSolution, mathPowSolution;
+        double myPowSolution = 0.0;
+        double mathPowSolution = 0.0;
 
         double tid;
         Date sluttid;
         Date starttid = new Date();
 
+        for (int i = 0; i < 1000000; i++) {
+            myPowSolution = (myPow(number, exponent));
+        }
+            sluttid = new Date();
+            tid = (double) (sluttid.getTime() - starttid.getTime());
 
-        myPowSolution = (myPow(number, exponent));
-
-        sluttid = new Date();
-        tid = (double)(sluttid.getTime()-starttid.getTime());
-
-        System.out.println("myPow(" + number +", " + exponent + ")" + " = " + myPowSolution);
-        System.out.println(tid + " ms");
+            System.out.println("myPow(" + number + ", " + exponent + ")" + " = " + myPowSolution);
+            System.out.println(tid + " ms");
     }
 
     /**

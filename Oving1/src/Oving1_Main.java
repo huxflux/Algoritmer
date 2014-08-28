@@ -9,7 +9,7 @@ import java.util.Date;
 public class Oving1_Main {
     public static void main(String[] args) {
         int[] staticArray = {-1, 3, -9, 2, 2, -1, 2, -1, -5};
-//        int numberOfElements = 100;
+//        int numberOfElements = 100;l
         int maxValue = 100;
         int minValue = 0;
 
